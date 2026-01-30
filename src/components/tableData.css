@@ -1,0 +1,210 @@
+
+.top_container {
+    position: relative;
+}
+
+.multiple_col_style {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    width: "100%";
+    padding-right: "4px";
+}
+
+.custom_select_box {
+    position:absolute;
+    top: 50px;
+    left: 10px;
+    z-index: 1000;
+    background-color: #fff;
+    padding: 16px;
+    width: 280px;
+    border-radius: 8px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.15);
+}
+
+.custom_select_box_heading {
+    margin-bottom: 6px;
+}
+
+.custom_select_box_para {
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.custom_select_box_input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+.custom_row_select {
+    font-size: 12px;
+    cursor: pointer;
+    margin-left: 2px;
+    padding: 5px;
+}
+
+
+/* paginator container */
+.p-paginator {
+  display: flex;
+}
+
+/* Center all content */
+.p-datatable th,
+.p-datatable td {
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* all paginator buttons */
+.p-paginator .p-link {
+  border: 1px solid #dcdcdc;
+  border-radius: 6px;
+  padding: 6px 14px;
+  font-size: 14px;
+  color: #444;
+  background: #fff;
+  transition: all 0.2s ease;
+  
+}
+
+/* active page */
+.p-paginator .p-highlight {
+  background: #4f6ef7;
+  color: #fff;
+  border-color: #4f6ef7;
+}
+
+/* hover */
+.p-paginator .p-link:hover {
+  background: #f2f4ff;
+}
+
+/* remove defaultt icons */
+.p-paginator-prev .p-paginator-icon,
+.p-paginator-next .p-paginator-icon {
+  display: none;
+}
+
+.p-paginator-prev::after {
+  content: "Previous";
+}
+.p-paginator-next::after {
+  content: "Next";
+}
+
+/* disabled previous */
+.p-paginator .p-disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.p-datatable-loading {
+  opacity: 0.4;
+}
+
+.p-paginator {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* left text */
+.p-paginator-current {
+  margin-right: auto;
+}
+
+/* right group */
+.p-paginator-prev,
+.p-paginator-pages,
+.p-paginator-next {
+  display: flex;
+  align-items: center;
+}
+
+/* media queries for table */
+@media (max-width: 850px) {
+  .p-datatable {
+    font-size: 14px;
+  }
+
+  .p-datatable th,
+  .p-datatable td {
+    padding: 6px 4px;
+  }
+}
+
+@media (max-width: 600px) {
+  .p-datatable {
+    font-size: 10px;
+  }
+
+  .p-datatable th,
+  .p-datatable td {
+    padding: 4px 2px;
+  }
+}
+
+@media (max-width: 450px) {
+  .p-datatable {
+    font-size: 7px;
+  }
+
+  .p-datatable th,
+  .p-datatable td {
+    padding: 4px 2px;
+  }
+}
+
+/* media queries for paginator */
+@media (max-width: 800px) {
+  .p-paginator {
+    font-size: 9px !important;
+  }
+
+  .p-paginator .p-paginator-page,
+  .p-paginator .p-paginator-next,
+  .p-paginator .p-paginator-prev {
+    min-width: 1.2rem !important;
+    height: 1.4rem !important;
+    font-size: 9px !important;
+  }
+
+  .p-paginator-current {
+    font-size: 9px !important;
+  }
+}
+
+
+@media (max-width: 560px) {
+  .p-paginator {
+    font-size: 6px !important;
+  }
+
+  .p-paginator .p-paginator-page,
+  .p-paginator .p-paginator-next,
+  .p-paginator .p-paginator-prev {
+    max-width: 1rem !important;
+    height: 1.2rem !important;
+    font-size: 6px !important;
+  }
+
+  .p-paginator-current {
+    font-size: 6px !important;
+  }
+}
+
+@media (max-width: 450px) {
+  .p-datatable .p-selection-column {
+    width: 22px !important;
+    min-width: 22px !important;
+    padding: 0 !important;
+  }
+
+  .p-datatable .p-checkbox-icon {
+    font-size: 8px !important;
+  }
+}
+
