@@ -2,6 +2,9 @@
 
 This is a React + TypeScript project built using Vite and PrimeReact.
 
+## Live Demo
+https://growmeorganic-tabledata.netlify.app
+
 ## Tech Stack
 - React
 - TypeScript
